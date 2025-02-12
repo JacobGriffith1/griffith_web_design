@@ -1,0 +1,24 @@
+body {
+    margin: 0%;
+    background-color: #eee8ef;
+}
+
+.nav-header {
+    display: flex;
+    flex-flow: row wrap;
+    height: 130px;
+    background-color: #160023;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav-logo {
+    height: 86%;
+    width: auto;
+    border-radius: 2%;
+}
+
+.nav-logotext {
+    height: 86%;
+    width: auto;
+}
