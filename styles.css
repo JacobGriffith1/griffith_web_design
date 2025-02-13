@@ -107,9 +107,59 @@ a {
     align-items: center;
 }
 
+.portfolio-preview {
+    background-color: #160023;
+    box-shadow: 0 0 2px #ffc400;
+}
+
 .cont {
     width: 95%;
     height: 95%;
+}
+
+/*---CAROUSEL---*/
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden; /* Hides images that are not in view */
+}
+  
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for image change */
+}
+  
+.carousel-image {
+    width: 100%;
+    object-fit: cover;
+}
+  
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+  
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.prev {
+    left: 10px;
+}
+  
+.next {
+    right: 10px;
 }
 
 /*---FOOTER---*/

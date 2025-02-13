@@ -12,14 +12,14 @@
         <!--HEADER-->
         <header data-landmark-index="0">
             <!--BANNER-->
-            <a href="" class="banner">
+            <a href="index.html" class="banner">
                 <img src="images/logo_yellow.png" class="banner-logo banner-logoimg">
                 <img src="images/logo-text_white.png" class="banner-logo">
             </a>
             <!--NAVBAR-->
             <nav class="navbar">
                 <a href="#About" class="navbutton">about</a>
-                <a href="#Portfolio" class="navbutton">portfolio</a>
+                <a href="portfolio.html" class="navbutton">portfolio</a>
                 <a href="#Resume" class="navbutton">resume</a>
                 <a href="#Contact" class="navbutton">contact</a>
             </nav>
@@ -32,8 +32,19 @@
         </section>
         <!--PORTFOLIO-->
         <section id="Portfolio" class="sect">
-            <div class="cont o2">
-                <div class=""></div>
+            <div class="cont portfolio-preview">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="/images/carousel/1-Arahbo.jpg" alt="Image 1" class="carousel-image">
+                        <img src="/images/carousel/2-Isshin.jpg" alt="Image 2" class="carousel-image">
+                        <img src="/images/carousel/3-Kibo.jpg" alt="Image 3" class="carousel-image">
+                        <!-- Add more images as needed -->
+                    </div>
+                    
+                    <!-- Previous and Next Buttons -->
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+                </div>
             </div>
         </section>
         <!--RESUME-->
@@ -48,6 +59,7 @@
                 <div class=""></div>
             </div>
         </section>
+        <script src="script.js"></script>
     </body>
     <footer>
         <section id="Links" class="footer">
