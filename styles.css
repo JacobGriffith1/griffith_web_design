@@ -1,5 +1,5 @@
 /*---OUTLINES-FOR-TESTING---*/
-.o {
+.o1 {
     outline: blue;
     outline-style: dashed;
     outline-width: 2px;
@@ -107,9 +107,20 @@ a {
     align-items: center;
 }
 
+.port-sect {
+    min-height: 400px;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .portfolio-preview {
     background-color: #160023;
     box-shadow: 0 0 2px #ffc400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cont {
@@ -119,9 +130,29 @@ a {
 
 /*---CAROUSEL---*/
 
+.carousel-header {
+    padding: 10px;
+
+}
+
+.carousel-button {
+    color: white;
+    font-family: CopperplateB;
+    font-style: bold;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0 0 2px #eee8ef;
+}
+
+.carousel-button:hover {
+    box-shadow: 0 0 5px #ffc400;
+    text-shadow: 0 0 5px #ffc400;
+}
+
 .carousel {
     position: relative;
     width: 80%;
+    min-width: 450px;
     max-width: 600px;
     margin: auto;
     overflow: hidden; /* Hides images that are not in view */
@@ -131,18 +162,28 @@ a {
     display: flex;
     transition: transform 0.5s ease; /* Smooth transition for image change */
 }
-  
-.carousel-image {
+
+.carousel-link {
     width: 100%;
     object-fit: cover;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-image {
+    min-width: 450px;
+    max-width: 600px;
+    padding-bottom: 20px;
 }
   
 button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #16002380;
     color: white;
+    text-shadow: 0 0 2px #ffc400;
     border: none;
     font-size: 24px;
     padding: 10px;
@@ -151,7 +192,7 @@ button {
 }
   
 button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #160023cc;
 }
   
 .prev {

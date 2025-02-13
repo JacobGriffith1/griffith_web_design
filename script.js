@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0; // Track the index of the currently displayed image
-  const images = document.querySelectorAll('.carousel-image'); // Select all images
+  const images = document.querySelectorAll('.carousel-link'); // Select all images
   const totalImages = images.length; // Get the total number of images
 
   // Function to change the image
@@ -41,4 +41,25 @@ document.addEventListener('DOMContentLoaded', function () {
   nextButton.addEventListener('click', function () {
     changeImage(1); // Go to the next image
   });
+
+  // Auto-cycle the images every 3 seconds (3000ms)
+  function startAutoCycle() {
+    autoCycleInterval = setInterval(function () {
+      changeImage(1);
+    }, 4000);
+  }
+
+  // Pause the auto-cycle on hover
+  const carousel = document.querySelector('.carousel');
+  carousel.addEventListener('mouseenter', function () {
+    clearInterval(autoCycleInterval); // Stop the auto-cycling
+  });
+
+  // Restart the auto-cycle when the mouse leaves
+  carousel.addEventListener('mouseleave', function () {
+    startAutoCycle(); // Start auto-cycling again
+  });
+
+  // Start auto-cycling initially
+  startAutoCycle();
 });
