@@ -197,10 +197,11 @@ a {
 
 .portfolio-preview {
     background-color: #160023;
-    box-shadow: 0 0 2px #ffc400;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 95%;
+    width: 100%;
 }
 
 .carousel-header {
@@ -277,6 +278,33 @@ button:hover {
     right: 10px;
 }
 
+/*---RESUME-----------------------------------------*/
+
+.rsmsect {
+    flex-direction: column;
+}
+
+.rsm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #160023;
+}
+
+.rsm-text {
+    font-family: CopperplateB;
+    color: white;
+    font-size: 18px;
+    font-style: bold;
+    text-align: center;
+    line-height: 0px;
+}
+
+.rsm-embed {
+    min-height: 630px;
+    background-color: #160023;
+}
+
 /*---FOOTER-----------------------------------------*/
 
 .footer {
@@ -285,6 +313,7 @@ button:hover {
     height: 170px;
     align-content: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .foot {
