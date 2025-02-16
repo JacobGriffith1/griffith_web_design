@@ -1,4 +1,4 @@
-/*---OUTLINES-FOR-TESTING---*/
+/*---OUTLINES-FOR-TESTING---------------------------*/
 .o1 {
     outline: blue;
     outline-style: dashed;
@@ -23,7 +23,7 @@
     outline-width: 2px;
 }
 
-/*---INDEX---*/
+/*---INDEX------------------------------------------*/
 
 @font-face {
     font-family: CopperplateB;
@@ -53,8 +53,7 @@ a {
     color: inherit;
 }
 
-
-/*---BANNER/NAVBAR---*/
+/*---BANNER/NAVBAR----------------------------------*/
 
 .banner {
     display: flex;
@@ -102,17 +101,26 @@ a {
     text-shadow: 0 0 5px #ffc400;
 }
 
-/*---MAIN-CONTENT---*/
+/*---MAIN-CONTENT-----------------------------------*/
 
 .sect {
-    height: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
+
+.cont {
+    width: 95%;
+    height: 95%;
+}
+
+/*---ABOUT------------------------------------------*/
 
 .sect-abt {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around; /* This ensures the remaining space is distributed */
     align-items: center;
     width: 100%;
@@ -127,17 +135,26 @@ a {
     position: relative;
     width: 100%;
     max-height: 400px;
+    padding-bottom: 10px;
 }
 
 .about-img {
     width: 100%;
+    max-width: 400px;
     height: auto;
-    object-fit: contain; /* Makes sure the image fits without distortion */
+    object-fit: cover; /* Makes sure the image fits without distortion */
+    border-radius: 50%;
 }
 
 .text-container {
     flex: 0 0 40%; /* Text container takes up 40% of the width */
-    height: 100%;
+    max-height: 400px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .about-text {
@@ -147,9 +164,27 @@ a {
     font-size: 18px;
     text-align: left;
     line-height: 1.5;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
+
+.abt-button {
+    text-align: center;
+    width: max-content;
+    align-self: center;
+    background-color: #160023;
+    box-shadow: 0 0 2px #ffc400;
+    color: #eee8ef;
+}
+
+.abt-button:hover {
+    box-shadow: 0 0 5px #ffc400;
+    text-shadow: 0 0 5px #ffc400;
+}
+
+/*---PORTFOLIO--------------------------------------*/
 
 .port-sect {
     min-height: 400px;
@@ -166,13 +201,6 @@ a {
     flex-direction: column;
     align-items: center;
 }
-
-.cont {
-    width: 95%;
-    height: 95%;
-}
-
-/*---CAROUSEL---*/
 
 .carousel-header {
     padding: 10px;
@@ -247,7 +275,7 @@ button:hover {
     right: 10px;
 }
 
-/*---FOOTER---*/
+/*---FOOTER-----------------------------------------*/
 
 .footer {
     display: flex;
