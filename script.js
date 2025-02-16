@@ -1,4 +1,4 @@
-// script.js
+// CAROUSEL========================================================================================
 
 document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0; // Track the index of the currently displayed image
