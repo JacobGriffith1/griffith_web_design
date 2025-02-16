@@ -303,6 +303,7 @@ button:hover {
 .rsm-embed {
     min-height: 630px;
     background-color: #160023;
+    padding-bottom: 1px;
 }
 
 /*---FOOTER-----------------------------------------*/
