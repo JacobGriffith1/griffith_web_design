@@ -177,6 +177,7 @@ a {
     background-color: #160023;
     box-shadow: 0 0 2px #ffc400;
     color: #eee8ef;
+    font-size: 18px;
 }
 
 .abt-button:hover {
@@ -227,7 +228,7 @@ a {
     min-width: 450px;
     max-width: 600px;
     margin: auto;
-    overflow: hidden; /* Hides images that are not in view */
+    overflow: hidden;
 }
   
 .carousel-images {
@@ -247,6 +248,7 @@ a {
     min-width: 450px;
     max-width: 600px;
     padding-bottom: 20px;
+    max-height: fit-content;
 }
   
 button {
